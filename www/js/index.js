@@ -47,12 +47,21 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+
+        Datastore.init();
+        Map.init();
+        Gui.init();
+
+        Datastore.getUpdatesPeriodically();
+
+        if ('addEventListener' in document) {
+        document.addEventListener('DOMContentLoaded', function() {
+            FastClick.attach(document.body);
+        }, false);
+        }
+        document.addEventListener("touchstart", function(){}, true);
+
     }
 };

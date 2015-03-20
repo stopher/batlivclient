@@ -124,14 +124,14 @@ var Map = (function(){
 
 		markers = L.markerClusterGroup({spiderfyOnMaxZoom:true, showCoverageOnHover: true, zoomToBoundsOnClick: true, spiderfyDistanceMultiplier:5}),
 		boatIcon = L.icon({
-	        iconUrl: '/assets/images/1423768479_ship.png',
+	        iconUrl: 'img/1423768479_ship.png',
 	        iconSize:     [64, 64], // size of the icon
 	        iconAnchor:   [32, 32], // point of the icon which will correspond to marker's location
 	        popupAnchor:  [2, -32] // point from which the popup should open relative to the 
 	     }),
 
 		myIcon = L.icon({
-	        iconUrl: '/assets/images/1423768568_Location.png',
+	        iconUrl: 'img/1423768568_Location.png',
 	        iconSize:     [46, 64], // size of the icon
 	        iconAnchor:   [23, 64], // point of the icon which will correspond to marker's location
 	        popupAnchor:  [2, -68] // point from which the popup should open relative to the 

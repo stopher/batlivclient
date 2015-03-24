@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.appzorz.kystlangs" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.appzorz.kystlangs" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Kystlangs</name>
     <description>
-        App som man bruker i båt langs kysten
+        App som man bruker i båt langs kysten.
     </description>
     <author email="christopher.olaussen@gmail.com" href="http://www.appbase.no">
         Christopher Olaussen

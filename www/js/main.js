@@ -32,13 +32,14 @@ function doSend(message) {
 
 $(document).ready(function() {
         	
-
   Datastore.init();
   Map.init();
   Gui.init();
   
   Datastore.getUpdatesPeriodically();
   
+  Ads.showBannerBottom();
+
   if ('addEventListener' in document) {
     document.addEventListener('DOMContentLoaded', function() {
         FastClick.attach(document.body);

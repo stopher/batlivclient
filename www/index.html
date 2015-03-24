@@ -92,14 +92,15 @@
                   <div class="input-field col s12">      
                       <select name="yourtype" id="yourtype" class="browser-default">
                         <option value="" disabled selected>Velg båttype</option>
-                        <option value="1">Tresjekte</option>
-                        <option value="2">Seilbåt</option>
-                        <option value="3">Daycruiser</option>
-                        <option value="4">Skjærgårdsjeep</option>
-                        <option value="5">Jolle</option>
-                        <option value="6">Sjekte</option>
-                        <option value="7">Cabincruiser</option>
-                        <option value="8">Sjark</option>
+                        <option value="sjekte">Sjekte</option>
+                        <option value="seilbat">Seilbåt</option>
+                        <option value="daycruiser">Daycruiser</option>
+                        <option value="jeep">Skjærgårdsjeep</option>
+                        <option value="jolle">Jolle</option>
+                        <option value="cabincruiser">Cabincruiser</option>
+                        <option value="sja">Sjark</option>
+                        <option value="rib">Rib</option>
+                        <option value="annet">Annet</option>
                       </select>
                   </div>
                 </div>        
@@ -225,6 +226,7 @@
           <p>Breddegrad: {{lat}}</p>
           <p>Lengdegrad: {{lng}}</p>
           <p class="desc">{{description}}</p>
+          <p class="desc">{{type}}</p>
         </div>
    
     <div class="fixed-action-btn" style="top: 10px; right: 10px;position:absolute">
@@ -244,7 +246,7 @@
     <script type="text/javascript" src="js/leaflet.markercluster-src.js"></script>
     <script type="text/javascript" src="js/handlebars-v3.0.0.js"></script>    
     <script type="text/javascript" src="js/fastclick.js"></script>
-    <script type="text/javascript" src="js/prodconf.js"></script>            
+    <script type="text/javascript" src="js/devconf.js"></script>            
     <script type="text/javascript" src="js/hashmap.js"></script>    
     <script type="text/javascript" src="js/Datastore.js"></script>
     <script type="text/javascript" src="js/Map.js"></script>

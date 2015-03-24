@@ -100,10 +100,10 @@ var Map = (function(){
   			}
 		}
 
-		map.on('locationfound', onLocationFound);
+		  map.on('locationfound', onLocationFound);
 		  
       	map.on('locationerror', function(e) {
-      		toast('An error occured:'+e.message, 4000, 'error') // 4000 is the duration of the toast	
+      		//toast('An error occured:'+e.message, 4000, 'error') // 4000 is the duration of the toast	
       	});
 
     	map.addLayer(markers);

@@ -128,12 +128,15 @@ var Datastore = (function(){
  
 			for (var i = 0; i < response.length; i++) {
 			    var boat = response[i];
-			    if(boats.has(i)) {
-			      var exBoat = boats.get(i);
-			      
+			    
+
+
+			    if(boats.has(boat.id)) {
+
+			      var exBoat = boats.get(boat.id);			      
 			      exBoat.latitude = boat.latitude;
 			      exBoat.longitude = boat.longitude;
-			      boats.set(i, exBoat);
+			      boats.set(boat.id, exBoat);
 			      Map.updateMarkerPos(exBoat);
 			    }
 			}
